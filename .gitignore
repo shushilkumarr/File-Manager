@@ -17,9 +17,5 @@
 /local.properties
 /gradle.properties
 /.idea/
-.DS_Store
 /build
-/captures
-release.keystore
-signing.properties
 /library/build
