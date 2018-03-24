@@ -1,0 +1,4 @@
+-dontnote android.net.http.*
+-dontnote org.apache.http.**
+-keep class com.kumar.shushil.** { *; }
+-dontwarn com.simplemobiletools.**

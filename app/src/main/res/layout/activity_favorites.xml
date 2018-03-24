@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/manage_favorites_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.simplemobiletools.commons.views.MyRecyclerView
+        android:id="@+id/manage_favorites_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+    <com.simplemobiletools.commons.views.MyTextView
+        android:id="@+id/manage_favorites_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/tiny_margin"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:text="@string/favorites_activity_placeholder"
+        android:visibility="gone"/>
+
+    <com.simplemobiletools.commons.views.MyTextView
+        android:id="@+id/manage_favorites_placeholder_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/manage_favorites_placeholder"
+        android:layout_centerHorizontal="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:padding="@dimen/normal_margin"
+        android:text="@string/add_favorites"
+        android:textSize="@dimen/bigger_text_size"
+        android:visibility="gone"/>
+
+</RelativeLayout>
